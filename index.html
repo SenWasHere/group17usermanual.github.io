@@ -2,80 +2,79 @@
 <html>
 <head>
 <style>
-  .container { 
-    display: flex
+.container { 
+  display: flex
   } 
+.container header {
+  background-color: #BA0C2F;
+  margin: 10px;
+  padding: 20px
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
 
-  .container header {
-    background-color: #BA0C2F;
-    margin: 10px;
-    padding: 20px
-    color: #FFFFFF;
-    text-align: center;
-    font-family: Georgia, serif;
-    font-size: 30px;
-  }
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #000000; 
+  color: #FFFFFF; 
+  font-family: Georgia, serif;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-  .container ul.sidenav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #000000; 
-    color: #FFFFFF; 
-    font-family: Georgia, serif;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
+ul.sidenav li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+  
+ul.sidenav li a.active {
+  background-color: #BA0C2F;
+  color: #FFFFFF;
+}
+  
+ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: #FFFFFF;
+}
 
-  .container ul.sidenav li a {
-    display: block;
-    color: #FFFFFF;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
- 
-  .container ul.sidenav li a.active {
-    background-color: #BA0C2F;
-    color: #FFFFFF;
-  }
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
 
-  .container ul.sidenav li a:hover:not(.active) {
-    background-color: #555;
-    color: #FFFFFF;
-  }
+.container main {
+  background-color: #FFFFFF; 
+  color: #000000;
+  font-family: Georgia, serif;
+}
 
-  .container div.content {
-    margin-left: 25%;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-
-  .container main {
-    background-color: #FFFFFF; 
-    color: #000000;
-    font-family: Georgia, serif;
-  }
-
-  .container footer {
-    background-color: #BA0C2F;
-    color: #FFFFFF;
-    font-family: Georgia, serif;
-  }
+.container footer {
+  background-color: #BA0C2F;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+}
 </style>
 </head>
 <body>
-<header>Group 17 User Manual</header>
-<ul class="sidenav">
+<header class="container">Group 17 User Manual</header>
+<ul class="container sidenav">
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
 <div class="content">
-  <main>place holder here</main>
+  <main class="container">place holder here</main>
 </div>
-<footer>place holder here</footer>
+<footer class="container">place holder here</footer>
 </body>
 </html>
